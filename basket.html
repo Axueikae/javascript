@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>(САМЕ МЕЙСОН ШОП)</title>
+	<link rel="stylesheet" type="text/css" href="css/stylebasket.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/animated-accordion.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<nav class="nav">
+				<h4 class="header__logo">САМЕ МЭЙСОН ШОП</h4>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Продукт</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Цена</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Встреча в реальности</a></li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+				</div>
+			</nav>		
+		</header>
+		<main>
+			<button class="btn-menu" id="btn-menu">МЕНЮ</button>
+			<div class="header__menu" id="menu" >
+				<ul class="header__menu_list">
+					<li class="list__item">Реклама</li>
+					<li class="list__item">Пожертвование</li>
+					<li class="list__item">Акции</li>
+				</ul>
+			</div>
+            <section class="products">
+            	<div class="wrapper">
+            		<h1 class="basket__text">Корзина</h1>
+            		<ul class="basket__list">
+            			<li class="basket__item"><img class="dns-shop" src="https://i.yapx.ru/ViTQN.png"></li>
+            			<li class="basket__item">
+            				<p class="basket__textp">Тут пока-что пусто!</p></li>	
+            		</ul>
+
+            		<button class="plus__minus" id="plus" onclick="plus()">+</button>	
+            	</div>
+            </section>
+
+			<div class="basket__wrap">
+				<button class="basket" id="basket">
+					<img src="img/basket.png" alt="basket" class="basket__image">
+					<p class="price">0 &#8381;</p>
+				</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="wrapper footer__warp">
+				<p class="footer__txt">&copy; (САМЕ МЕЙСОН ШОП) 2022 г.</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/basket.js"></script>
+		<script type="text/javascript" src="js/burger.js"></script>
+		<script type="text/javascript" src="js/itc-slider.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+
+
+	</body>
+	</html>

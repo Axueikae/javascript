@@ -1,0 +1,254 @@
+h4 {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url('../img/yneciback2.jpg');
+	background-size: cover;
+}
+.header {
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+.wrapper {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__list {
+	display: flex;
+	list-style: none;
+}
+.nav__item {
+	margin-right: 40px;
+}
+.nav__link {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.product-image {
+	width: 440px;
+	display: block;
+	margin: 0 auto;
+}
+.header__menu {
+	position: absolute;
+	z-index: 10;
+	background: rgba(108, 87, 227, .50);
+	background-image: url('../img/yneci.jpg');
+	background-size: cover;
+	width: 300px;
+	height: 100px;
+	padding: 40px;
+	display: none;
+}
+.header__menu_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.list__item {
+	background: gold;
+	background-image: url('../img/yneci.jpg');
+	background-size: contain;
+	border: 1px solid black;
+	color: aqua;
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 2px;
+	cursor: pointer;
+	opacity: .4;
+}
+.list__item:hover, .list__item:focus {
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 1.0));
+	opacity: 1;
+}
+.list__item:active {
+	position: relative;
+	top: 3px;
+}
+.is-active {
+	display: block;
+}
+.btn-menu {
+	width: 150px;
+	height: 60px;
+    background-image: url('../img/yneciback1.jpg');	
+    background-size: cover ;
+}
+.theme__list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.theme__item_light {
+	width: 20px;
+	height: 20px;
+/*	background: white;
+	border: 1px solid black;
+	border-radius: 100px;
+	margin: 10px;
+	cursor: pointer;
+	transition: .3s;*/
+	background: url(../img/sun.svg);
+	margin: 5px;
+
+}
+.theme__item_light:hover {
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1.0));
+	transform: scale(1,1);
+}
+.theme__item_dark {
+	width: 20px;
+	height: 20px;
+   /*	background: black;
+	border: 1px solid black;
+	border-radius: 100px;
+	margin: 10px;
+	cursor: pointer;*/
+	transition: .3s;
+	background: url(../img/moon.svg);
+	margin: 5px;
+}
+.theme__item_dark:hover {
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1.0));
+	transform: scale(1,1);
+	}
+.product-btn {
+	width: 200px;
+	height: 80px;
+	background-image: url('../img/images.jpg');
+	background-size: cover;
+	color: dark;
+	font-weight: 5px;
+}
+h2 {
+ padding: 0;
+ margin: 0;
+}
+.footer__wrap {
+	padding: 30px 0;
+}
+.footer__txt {
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.burger {
+	display: none;
+}
+.burger__line {
+	width: 25px;
+	height: 3px;
+	background: black;
+	margin: 5px;
+}
+
+@media screen and (max-width: 820px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+		background: white;
+		position: absolute;
+		right: 0;
+		top: 225px;
+		height: 40vh;
+		z-index: 2;
+		align-items: center;
+		text-align: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		width: 50%;
+	}
+	.wrapper {
+		max-width: 620px;
+	}
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav__list_active {
+	transform: translateX(0);
+}
+.watch {
+	width: 150px;
+	margin: 0 auto;
+	font-size: 32px;
+	font-weight: bolder;
+	background: yellow;
+}
+#myVideo {
+	width: 100%;
+}
+.video {
+	position: relative;
+}
+.video__content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #f1f1f1;
+	padding: 20px;
+}
+.video__title {
+	font-size: 32px;
+
+}
+.video__description {
+	font-size: 22px;
+}
+.play {
+	width: 130px;
+	height: 30px;
+	background-color: yellow;
+	cursor: pointer;
+
+}
+.imgc {
+	height: 25px;
+}
+#playbutton {
+	background: url(../img/play.svg);
+	height: 25px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 25px;
+}
+.basket__wrap {
+	position: fixed;
+	background: rgba(0, 0, 0, .5);
+	top: 100;
+	left: 100;
+	bottom: 0;
+	right: 0;
+	margin: 40px 60px;
+}
+.basket {
+	background: none;
+	border: none;
+}
+
+.basket__image {
+	width: 60px;
+}
